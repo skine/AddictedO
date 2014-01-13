@@ -1,0 +1,154 @@
+@import "journal/base";
+
+// Journal 3.0.3
+// Bootswatch
+// -----------------------------------------------------
+
+@import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
+
+// Navbar =====================================================================
+
+.navbar {
+	font-size: 18px;
+	font-family: @font-family-sans-serif;
+	font-weight: @headings-font-weight;
+}
+
+.navbar-brand {
+	font-size: 18px;
+	font-weight: @headings-font-weight;
+	text-transform: uppercase;
+}
+
+.navbar-top{
+  height: @navbar-height-top;
+  border-top: @navbar-top-border solid @brand-primary;
+}
+
+.navbar-default {
+  .navbar-nav {
+    > li > a {
+      &:hover,
+      &:focus {
+        border-bottom: 4px solid #000;
+      }
+    }
+  }
+}
+
+.input-group-btn:last-child > .btn-lg, .input-group-btn:first-child > .btn-lg:not(:first-child) {
+border-bottom-left-radius: 0;
+border-top-left-radius: 0;
+}
+
+.navbar-form{
+  padding:0;
+}
+
+// Banner =================================================================
+.banner{
+  height: 295px;
+  background-image: image-url("banner.jpg");
+  background-size: 100%;
+}
+
+// Footer =================================================================
+.footer{
+  background-color: @gray-lightdark;
+}
+
+.footer li {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  text-decoration: underline;
+}
+
+.footer li a{
+  color: white;
+}
+
+// Buttons ====================================================================
+
+// Typography =================================================================
+
+// Tables =====================================================================
+
+// Forms ======================================================================
+
+.has-warning {
+	.help-block,
+	.control-label {
+		color: @brand-danger;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: @brand-danger;
+	}
+}
+
+.has-error {
+	.help-block,
+	.control-label {
+		color: @brand-primary;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: @brand-primary;
+	}
+}
+
+.has-success {
+	.help-block,
+	.control-label {
+		color: @brand-success;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: @brand-success;
+	}
+}
+
+// Navs =======================================================================
+
+.pagination {
+
+	.active > a,
+	.active > a:hover {
+		border-color: #ddd;
+	}
+}
+
+// Indicators =================================================================
+
+// Progress bars ==============================================================
+
+// Containers =================================================================
+
+.jumbotron {
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: @font-family-sans-serif;
+		font-weight: @headings-font-weight;
+		color: #000;
+	}
+}
+
+.panel {
+
+	&-primary,
+	&-success,
+	&-warning,
+	&-danger,
+	&-info {
+		.panel-title {
+			color: #fff;
+		}
+	}
+
+
+}
